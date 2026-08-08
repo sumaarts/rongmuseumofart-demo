@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="/rongmuseumofart-demo/favicon.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Róng Museum of Art 融美术馆</title>
+<meta name="description" content="The Róng Museum of Art presents contemporary art and intermedia practices through a global lens." />
+
+    <script type="module" crossorigin src="/rongmuseumofart-demo/assets/js/interactions-C4ouxeA9.js"></script>
+    <link rel="stylesheet" crossorigin href="/rongmuseumofart-demo/assets/css/interactions-tBi7a2_W.css">
+  </head>
+  <body>
+    <div class="relative">
+      
+<header
+  class="absolute inset-x-0 top-0 z-10 flex items-start justify-between [padding-inline:var(--page-gutter)] [padding-top:var(--header-padding-top)] "
+>
+  <a href="index.html" aria-label="Róng Museum of Art">
+    <img src="/rongmuseumofart-demo/assets/img/logo-white.svg" alt="Róng Museum of Art" class="h-auto [width:var(--logo-width)]" />
+  </a>
+
+  <nav
+    class="hidden [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] text-white md:flex md:flex-col md:items-end md:gap-[1.5rem]"
+  >
+    <ul class="flex flex-col items-end gap-[0.375rem]">
+      <li><a href="#about-us">About us</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#spatial-design">Spatial Design</a></li>
+      <li><a href="#press">Press</a></li>
+      <li><button type="button" data-modal-open="contact">Contact</button></li>
+    </ul>
+    <div class="flex items-center" style="font-family: var(--font-cjk)">
+      <span>中文</span>
+      <span style="font-family: var(--font-sans)"> / EN</span>
+    </div>
+  </nav>
+
+  <button
+    type="button"
+    data-modal-open="menu"
+    class="md:hidden [font-size:0.875rem] leading-[1.5] tracking-widest text-white"
+  >
+    MENU
+  </button>
+</header>
+
+
+      <!-- ===== Hero ===== -->
+      <div class="relative [height:var(--hero-height)] w-full overflow-hidden">
+        <img src="/rongmuseumofart-demo/assets/img/home/hero.webp" alt="" class="absolute inset-0 h-full w-full object-cover" />
+      </div>
+    </div>
+    <!-- Hero 图片底边→正文的留白用 --hero-content-gap（PC 100px / Mobile 67px，实测，
+         见 tokens.css [N-010]）；大区块之间（About us/Architecture/Spatial Design/Press）
+         用 --section-gap-y（Mobile 110px 实测，[N-016]） -->
+    <main
+      class="flex flex-col [gap:var(--section-gap-y)] [padding-inline:var(--page-gutter)] [padding-top:var(--hero-content-gap)] [padding-bottom:var(--content-footer-gap)]"
+    >
+      <!-- ===== About us ===== -->
+      <section id="about-us" class="section-grid" data-reveal>
+        <p class="text-black" style="font-size: var(--text-section-label); line-height: var(--leading-section-label)">About us</p>
+        
+
+<div id="about-us-copy" class="flex max-w-[64.4375rem] flex-col" data-expandable>
+  <h2 class="text-black" style="font-size: var(--text-display); letter-spacing: var(--tracking-display); line-height: var(--leading-display); font-weight: 500">The Róng Museum of Art presents contemporary art and intermedia practices through a global lens.</h2>
+  <div class="flex flex-col [gap:var(--copy-gap)] [margin-top:var(--copy-gap)] text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">
+    
+    <p>Located in Shenzhen, China, the Róng Museum of Art is dedicated to showcasing and collecting a wide range of contemporary creative practices, including visual art, moving image, performance, and digital media. By focusing on the arts of our time, the Museum is committed to critically examining its role as a cultural institution, positioning itself at the intersection of history and the future whilefostering global dialogue and cross-cultural exchange.</p>
+    
+  </div>
+  
+  <!-- 追加段落**挪出上面那个带 gap 的容器**：改用高度过渡后（.collapsible，见 base.css），
+       折叠态高度虽然是 0，却仍然作为 flex 子项占掉一份 gap，凭空多出 40–80px 空白。
+       段前间距因此改成写在容器内部的 padding-top，随高度一起收掉（I-016） -->
+  <div class="collapsible text-black" data-expandable-extra style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">
+    <!-- 中间这层只负责 overflow:hidden（由 .collapsible > * 提供），不能带 padding：
+         padding 不受 overflow 影响，会让折叠态残留一条高度 -->
+    <div>
+      <div class="flex flex-col [gap:var(--copy-gap)] [padding-top:var(--copy-gap)]">
+        
+        <p>At the heart of the Museum lies a core value: “interlinkedness” (<em>gong rong</em>). Rong is a Chinese character with ancient and layered connotations, embracing meanings such as melding (<em>rong hua</em>), integration (<em>rong he</em>), fusion (<em>rong hui</em>), and exchange (<em>rong tong</em>). This single character encapsulates our new vision of a cultural institution for the twenty-first century. In an era of globalization, interlinkedness, gong rong, signifies not only mutual respect, but also an active understanding of one another, mutual learning, and collective growth.</p>
+        
+        <p>The Róng Museum of Art aspires not only to offer inspiring cultural experiences, but also to serve as an open, diverse, and trusted learning organization and knowledge-sharing platform, fostering the sustainable development of culture.</p>
+        
+        <p>Occupying a space of over 4,000 square meters, the Róng Museum of Art is expected to open to the public in the second half of 2027.</p>
+        
+        <p>“Through its exhibitions and programs, the Róng Museum of Art is committed to activating a new perspective for its audiences: to view ever-changing life as an ongoing act of artmaking. Each person’s life carries the potential to become a unique work of art, one that resonates with and inspires others, so that together we may create a world of possibilities. ”  —— Pi Li</p>
+        
+      </div>
+    </div>
+  </div>
+  <!-- 两个文案由模板下发给 JS，而不是写死在 interactions.ts 里：WordPress 那份是可翻译串
+       （`__('More', 'rong-moa')`），JS 若用硬编码英文覆盖，中文版一点按钮就跳回英文 -->
+  
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start [margin-top:var(--section-copy-gap)]"
+  data-expandable-toggle aria-expanded="false" data-label-more="More" data-label-close="Close"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>More</span>
+</button>
+
+  
+</div>
+
+      </section>
+
+      <!-- ===== Architecture ===== -->
+      
+      
+      <section id="architecture" class="flex flex-col" data-reveal>
+        <!-- 移动端专用：label 在最上方（设计稿 `1:774`，移动端与 PC 端位置不同，逐端转录）。
+             以下纵向间距不再用统一的 --section-copy-gap（那个 token 只精确覆盖"段落→按钮"关系，
+             见 tokens.css 该 token 的说明），改成每处单独核实的间距，见 [N-016] -->
+        <p class="text-black md:hidden" style="font-size: var(--text-section-label); line-height: var(--leading-section-label)">Architecture</p>
+
+        <!-- 移动端：过渡图+主图收成一张可切换轮播（见 image-carousel.ejs 注释）。
+             label→轮播实测 10px（`1:774`→`1:775`），不是 30px -->
+        
+<div class="flex flex-col [gap:var(--image-caption-gap)] md:hidden [margin-top:var(--section-label-gap-mobile)]" data-carousel>
+  <!-- 各帧叠在同一个 grid 单元里做交叉淡入（.carousel-stack，见 base.css），
+       不再用 hidden 逐帧显隐——hidden 会让元素退出布局，没法过渡（I-016） -->
+  <div class="carousel-stack">
+    
+    <!-- 移动端轮播图统一裁成 327×436（`1:777`/`1:793` 实测） -->
+    <img
+      src="/rongmuseumofart-demo/assets/img/home/about-detail.webp"
+      alt="Róng Museum of Art architectural facade detail"
+      class="aspect-mobile h-auto w-full object-cover"
+      style="--aspect-mobile: 327/436"
+      data-carousel-slide="0"
+      data-carousel-current
+    />
+    
+    <!-- 移动端轮播图统一裁成 327×436（`1:777`/`1:793` 实测） -->
+    <img
+      src="/rongmuseumofart-demo/assets/img/home/architecture-main.webp"
+      alt="Róng Museum of Art exterior"
+      class="aspect-mobile h-auto w-full object-cover"
+      style="--aspect-mobile: 327/436"
+      data-carousel-slide="1"
+      
+    />
+    
+  </div>
+
+  <div class="flex items-start justify-between gap-[1rem]">
+    <!-- 图注同样叠放：容器高度取最长那条，切换时不会忽高忽低。这反而更贴合设计稿——
+         `1:779` 图注行标注高度 32（两行），正是较长那条图注的高度 -->
+    <div class="carousel-stack text-black" style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)">
+      
+      <span data-carousel-slide="0" data-carousel-current>Róng Museum of Art by Ole Scheeren © Buro-OS，Photograph by 朱雨蒙</span>
+      
+      <span data-carousel-slide="1" >Róng Museum of Art by Ole Scheeren © Buro-OS</span>
+      
+    </div>
+
+    
+    <!-- 固定 12px 行高 + items-center：非当前项只有 10px，要和 12px 的当前项垂直居中对齐
+         （设计稿里小圆点 y=1，正是 (12-10)/2） -->
+    <div class="flex h-[0.75rem] shrink-0 items-center gap-[0.25rem]">
+      
+      <button
+        type="button"
+        data-carousel-dot
+        aria-label="Show image 1"
+        aria-current="true"
+        class="shrink-0 rounded-full"
+      ></button>
+      
+      <button
+        type="button"
+        data-carousel-dot
+        aria-label="Show image 2"
+        aria-current="false"
+        class="shrink-0 rounded-full"
+      ></button>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+        <!-- PC：过渡图整行，宽度是内容宽的固定比例，与右侧栅格同一套比例系统（见 N-013）。
+             PC 端 label 是隐藏的（在下面 section-grid 里另起一份），过渡图是第一个可见元素，无需上间距 -->
+        <div class="hidden [width:var(--transition-image-width)] md:block">
+          
+<figure class="flex flex-col [gap:var(--image-caption-gap)] ">
+  <!-- aspect-mobile 是 base.css 里的工具类（只在 md 以下生效，读取 --aspect-mobile 变量）：
+       不能用 Tailwind 的 aspect-[...] 动态拼类名，Tailwind 是扫描源码里的字面量类名来生成
+       CSS 的，EJS 模板字符串插值出来的类名它扫不到、不会生成对应规则 -->
+  <img
+    src="/rongmuseumofart-demo/assets/img/home/about-detail.webp"
+    alt="Róng Museum of Art architectural facade detail"
+    class="h-auto w-full object-cover "
+    
+  />
+  <figcaption
+    class="text-black"
+    style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)"
+  >
+    Róng Museum of Art by Ole Scheeren © Buro-OS，Photograph by 朱雨蒙
+  </figcaption>
+</figure>
+
+        </div>
+
+        <!-- 过渡图/轮播 → 两栏内容区：PC、Mobile 都实测 40px（`--section-media-gap`，两端相等
+             不用插值，见 tokens.css）。PC 两行两列：第一行 [label(与主图底边对齐) | 主图]，第二行
+             [空 | 标题+正文+按钮]。label 用 `align-self: end` 贴主图底边，不用魔数——设计稿 `1:38`
+             实测紧贴主图下沿 -->
+        <div class="section-grid [margin-top:var(--section-media-gap)]">
+          <p class="text-black hidden self-end md:block" style="font-size: var(--text-section-label); line-height: var(--leading-section-label)">Architecture</p>
+          <div class="hidden md:block">
+            
+<figure class="flex flex-col [gap:var(--image-caption-gap)] ">
+  <!-- aspect-mobile 是 base.css 里的工具类（只在 md 以下生效，读取 --aspect-mobile 变量）：
+       不能用 Tailwind 的 aspect-[...] 动态拼类名，Tailwind 是扫描源码里的字面量类名来生成
+       CSS 的，EJS 模板字符串插值出来的类名它扫不到、不会生成对应规则 -->
+  <img
+    src="/rongmuseumofart-demo/assets/img/home/architecture-main.webp"
+    alt="Róng Museum of Art exterior"
+    class="h-auto w-full object-cover "
+    
+  />
+  <figcaption
+    class="text-black"
+    style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)"
+  >
+    Róng Museum of Art by Ole Scheeren © Buro-OS
+  </figcaption>
+</figure>
+
+          </div>
+          <div class="hidden md:block"></div>
+          
+
+<div id="architecture-copy" class="flex max-w-[64.4375rem] flex-col" data-expandable>
+  <h2 class="text-black" style="font-size: var(--text-display); letter-spacing: var(--tracking-display); line-height: var(--leading-display); font-weight: 500">This is a building that aims to spark curiosity, draw people in, and inspire a sense of wonder.</h2>
+  <div class="flex flex-col [gap:var(--copy-gap)] [margin-top:var(--copy-gap)] text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">
+    
+    <p>The Róng Museum of Art is an architectural extension of the idea of sustainability and landscape, while also being a building dedicated to culture, experimentation, and exploration.</p>
+    
+  </div>
+  
+  <!-- 追加段落**挪出上面那个带 gap 的容器**：改用高度过渡后（.collapsible，见 base.css），
+       折叠态高度虽然是 0，却仍然作为 flex 子项占掉一份 gap，凭空多出 40–80px 空白。
+       段前间距因此改成写在容器内部的 padding-top，随高度一起收掉（I-016） -->
+  <div class="collapsible text-black" data-expandable-extra style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">
+    <!-- 中间这层只负责 overflow:hidden（由 .collapsible > * 提供），不能带 padding：
+         padding 不受 overflow 影响，会让折叠态残留一条高度 -->
+    <div>
+      <div class="flex flex-col [gap:var(--copy-gap)] [padding-top:var(--copy-gap)]">
+        
+        <p>The Museum space is elevated to form a series of cone-shaped pavilions with a very small footprint, freeing up the ground plane as a public space and entrance to the building.</p>
+        
+      </div>
+    </div>
+  </div>
+  <!-- 两个文案由模板下发给 JS，而不是写死在 interactions.ts 里：WordPress 那份是可翻译串
+       （`__('More', 'rong-moa')`），JS 若用硬编码英文覆盖，中文版一点按钮就跳回英文 -->
+  
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start [margin-top:var(--section-copy-gap)]"
+  data-expandable-toggle aria-expanded="false" data-label-more="More" data-label-close="Close"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>More</span>
+</button>
+
+  
+</div>
+
+        </div>
+      </section>
+      
+
+      <!-- ===== Spatial Design ===== -->
+      
+      
+      <section id="spatial-design" class="flex flex-col" data-reveal>
+        <!-- 移动端专用：label 在最上方（设计稿 `1:790`，移动端与 PC 端位置不同，逐端转录）。
+             以下纵向间距不再用统一的 --section-copy-gap，改成每处单独核实的间距，见 [N-016] -->
+        <p class="text-black md:hidden" style="font-size: var(--text-section-label); line-height: var(--leading-section-label)">Spatial Design</p>
+
+        <!-- label→轮播实测 10px（`1:790`→`1:791`），不是 30px -->
+        
+<div class="flex flex-col [gap:var(--image-caption-gap)] md:hidden [margin-top:var(--section-label-gap-mobile)]" data-carousel>
+  <!-- 各帧叠在同一个 grid 单元里做交叉淡入（.carousel-stack，见 base.css），
+       不再用 hidden 逐帧显隐——hidden 会让元素退出布局，没法过渡（I-016） -->
+  <div class="carousel-stack">
+    
+    <!-- 移动端轮播图统一裁成 327×436（`1:777`/`1:793` 实测） -->
+    <img
+      src="/rongmuseumofart-demo/assets/img/home/architecture-detail.webp"
+      alt="Róng Museum of Art interior detail"
+      class="aspect-mobile h-auto w-full object-cover"
+      style="--aspect-mobile: 327/436"
+      data-carousel-slide="0"
+      data-carousel-current
+    />
+    
+    <!-- 移动端轮播图统一裁成 327×436（`1:777`/`1:793` 实测） -->
+    <img
+      src="/rongmuseumofart-demo/assets/img/home/spatial-design-main.webp"
+      alt="Róng Museum of Art gallery interior"
+      class="aspect-mobile h-auto w-full object-cover"
+      style="--aspect-mobile: 327/436"
+      data-carousel-slide="1"
+      
+    />
+    
+  </div>
+
+  <div class="flex items-start justify-between gap-[1rem]">
+    <!-- 图注同样叠放：容器高度取最长那条，切换时不会忽高忽低。这反而更贴合设计稿——
+         `1:779` 图注行标注高度 32（两行），正是较长那条图注的高度 -->
+    <div class="carousel-stack text-black" style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)">
+      
+      <span data-carousel-slide="0" data-carousel-current>© Gluckman Tang Architects 2026</span>
+      
+      <span data-carousel-slide="1" >© Gluckman Tang Architects 2026</span>
+      
+    </div>
+
+    
+    <!-- 固定 12px 行高 + items-center：非当前项只有 10px，要和 12px 的当前项垂直居中对齐
+         （设计稿里小圆点 y=1，正是 (12-10)/2） -->
+    <div class="flex h-[0.75rem] shrink-0 items-center gap-[0.25rem]">
+      
+      <button
+        type="button"
+        data-carousel-dot
+        aria-label="Show image 1"
+        aria-current="true"
+        class="shrink-0 rounded-full"
+      ></button>
+      
+      <button
+        type="button"
+        data-carousel-dot
+        aria-label="Show image 2"
+        aria-current="false"
+        class="shrink-0 rounded-full"
+      ></button>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+        <div class="hidden [width:var(--transition-image-width)] md:block">
+          
+<figure class="flex flex-col [gap:var(--image-caption-gap)] ">
+  <!-- aspect-mobile 是 base.css 里的工具类（只在 md 以下生效，读取 --aspect-mobile 变量）：
+       不能用 Tailwind 的 aspect-[...] 动态拼类名，Tailwind 是扫描源码里的字面量类名来生成
+       CSS 的，EJS 模板字符串插值出来的类名它扫不到、不会生成对应规则 -->
+  <img
+    src="/rongmuseumofart-demo/assets/img/home/architecture-detail.webp"
+    alt="Róng Museum of Art interior detail"
+    class="h-auto w-full object-cover "
+    
+  />
+  <figcaption
+    class="text-black"
+    style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)"
+  >
+    © Gluckman Tang Architects 2026
+  </figcaption>
+</figure>
+
+        </div>
+
+        <!-- 过渡图/轮播 → 两栏内容区：40px（--section-media-gap）。PC 两行两列，同 Architecture：
+             label 贴主图底边（设计稿 `1:70` 实测），不用魔数 -->
+        <div class="section-grid [margin-top:var(--section-media-gap)]">
+          <p class="text-black hidden self-end md:block" style="font-size: var(--text-section-label); line-height: var(--leading-section-label)">Spatial Design</p>
+          <div class="hidden md:block">
+            
+<figure class="flex flex-col [gap:var(--image-caption-gap)] ">
+  <!-- aspect-mobile 是 base.css 里的工具类（只在 md 以下生效，读取 --aspect-mobile 变量）：
+       不能用 Tailwind 的 aspect-[...] 动态拼类名，Tailwind 是扫描源码里的字面量类名来生成
+       CSS 的，EJS 模板字符串插值出来的类名它扫不到、不会生成对应规则 -->
+  <img
+    src="/rongmuseumofart-demo/assets/img/home/spatial-design-main.webp"
+    alt="Róng Museum of Art gallery interior"
+    class="h-auto w-full object-cover "
+    
+  />
+  <figcaption
+    class="text-black"
+    style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)"
+  >
+    © Gluckman Tang Architects 2026
+  </figcaption>
+</figure>
+
+          </div>
+          <div class="hidden md:block"></div>
+          <!-- 设计稿有 More 按钮（`1:82`/`1:803`）但全文件搜索不到对应的隐藏展开文案——按 I-008 的
+               决定保留按钮、传空数组渲染诚实空状态（点击只切 Close/More 标签，等设计稿补内容再填） -->
+          
+
+<div id="spatial-design-copy" class="flex max-w-[64.4375rem] flex-col" data-expandable>
+  <h2 class="text-black" style="font-size: var(--text-display); letter-spacing: var(--tracking-display); line-height: var(--leading-display); font-weight: 500">The Róng Museum of Art is an iconic building within the M80 urban complex where art, architecture, and urban life converge.</h2>
+  <div class="flex flex-col [gap:var(--copy-gap)] [margin-top:var(--copy-gap)] text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">
+    
+    <p>Guided by the Museum’s vision of “interconnectedness” ( <em>gongrong</em> ) and responding to Shenzhen’s dense yet porous urban fabric, the design provides a framework for exhibition, learning, and public engagement. Its galleries are arranged within a dynamic, daylit perimeter that encourages circulation and contemplation and echoes the layered network of streets, canals, parks, and elevated walkways of the surrounding Houhai neighborhood.</p>
+    
+  </div>
+  
+  <!-- 追加段落**挪出上面那个带 gap 的容器**：改用高度过渡后（.collapsible，见 base.css），
+       折叠态高度虽然是 0，却仍然作为 flex 子项占掉一份 gap，凭空多出 40–80px 空白。
+       段前间距因此改成写在容器内部的 padding-top，随高度一起收掉（I-016） -->
+  <div class="collapsible text-black" data-expandable-extra style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">
+    <!-- 中间这层只负责 overflow:hidden（由 .collapsible > * 提供），不能带 padding：
+         padding 不受 overflow 影响，会让折叠态残留一条高度 -->
+    <div>
+      <div class="flex flex-col [gap:var(--copy-gap)] [padding-top:var(--copy-gap)]">
+        
+      </div>
+    </div>
+  </div>
+  <!-- 两个文案由模板下发给 JS，而不是写死在 interactions.ts 里：WordPress 那份是可翻译串
+       （`__('More', 'rong-moa')`），JS 若用硬编码英文覆盖，中文版一点按钮就跳回英文 -->
+  
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start [margin-top:var(--section-copy-gap)]"
+  data-expandable-toggle aria-expanded="false" data-label-more="More" data-label-close="Close"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>More</span>
+</button>
+
+  
+</div>
+
+        </div>
+      </section>
+      
+
+      <!-- ===== Press ===== -->
+      
+      
+      <section id="press" class="flex flex-col [gap:var(--section-copy-gap)]" data-reveal>
+        <p class="text-black" style="font-size: var(--text-section-label); line-height: var(--leading-section-label)">Press</p>
+
+        <!-- 每行上下各一条分隔线，与设计稿 `1:87`-`1:90` 四条 Vector 一一对应。所有行的完整内容
+             （缩略图/摘要/日期，或占位空状态）始终渲染进 DOM，只用 hidden 属性切换显隐——
+             这样重新展开任意一行都能正确显示，不依赖构建期就知道"默认展开哪一行" -->
+        <!-- data-accordion-mode="single"：同一时刻只能展开一条（React 版用共享 openKey 状态）；
+             Careers 的职位列表没有这个标记，各行独立展开/折叠，互不影响 -->
+        <div class="border-t border-[var(--divider-color)]" data-accordion data-accordion-mode="single">
+          
+          
+          <div class="border-b border-[var(--divider-color)] py-[var(--press-row-padding-y)] is-open" data-accordion-item>
+            <div class="section-grid">
+              <!-- 左列：缩略图（设计稿 `1:109` 落在左栏 gutter 起点），无文章的占位行不渲染。
+                   缩略图比右栏文案高，是它决定整行高度——所以它也必须做高度过渡，
+                   否则面板平滑展开、行高却被缩略图带着瞬间跳（I-016） -->
+              <div>
+                
+                <div class="collapsible" data-accordion-thumb>
+                  <div>
+                    <img
+                      src="/rongmuseumofart-demo/assets/img/home/news-thumbnail.webp"
+                      alt=""
+                      class="h-auto w-full [max-width:var(--press-thumb-width)] bg-black object-contain"
+                    />
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="flex items-start justify-between gap-[2rem]">
+                <!-- 这一列原本用 gap 拉开标题与面板；面板改成高度过渡后，折叠态仍会占一份 gap，
+                     所以间距挪进面板内部的 padding-top，随高度一起收（I-016） -->
+                <div class="flex flex-1 flex-col">
+                  <!-- 展开态标题带下划线（`1:104`）= 可跳详情页；折叠态无下划线（`1:94`）。
+                       两种表现都渲染进 DOM，JS 切换显隐；占位行没有详情页，恒为纯文本。示范模板只有
+                       一个新闻详情页（/news-detail.html），不按 slug 生成多篇，所有真实文章行都指向它 -->
+                  
+                  <a href="news-detail.html" class="text-black underline" style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)" data-accordion-title-open >Róng Museum of Art Announces Official Public Opening in 2027</a>
+                  <span class="text-black" style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)" data-accordion-title-closed hidden>Róng Museum of Art Announces Official Public Opening in 2027</span>
+                  
+
+                  <!-- 三层结构是必需的：.collapsible 是 grid，它的直接子元素靠 overflow:hidden
+                       把 min-content 压成 0（0fr 才收得干净），间距只能放在**再下一层**——
+                       padding 不受 overflow 影响，写在中间层会让折叠态永远残留一条 padding 高度 -->
+                  <div class="collapsible" data-accordion-panel>
+                    <div>
+                      <div class="[padding-top:var(--press-row-gap)]">
+                        
+                        <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">This article offers an in-depth analysis of Róng Museum of Art as the core art carrier of M80, covering its academic vision, pre-opening preparation progress, budget for the inaugural season exhibitions...</p>
+                        <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">21 Apr. 2026</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 按钮内只有指示器图形、没有文字，所以要 aria-label 提供可访问名称。
+                     但名称里**不能带 Collapse/Expand**：状态由 aria-expanded 表达且由 JS 实时更新，
+                     写进 label 只会在展开后变成陈旧且自相矛盾的描述（JS 不会去改 label）。
+                     注释必须放在标签外——HTML 的属性位置不允许出现注释，会被当成属性名吃掉后面的内容 -->
+                <button
+                  type="button"
+                  data-accordion-toggle
+                  aria-expanded="true"
+                  aria-label="Róng Museum of Art Announces Official Public Opening in 2027"
+                  class="flex shrink-0 items-center [height:var(--leading-list-title)]"
+                >
+                  
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="border-b border-[var(--divider-color)] py-[var(--press-row-padding-y)] " data-accordion-item>
+            <div class="section-grid">
+              <!-- 左列：缩略图（设计稿 `1:109` 落在左栏 gutter 起点），无文章的占位行不渲染。
+                   缩略图比右栏文案高，是它决定整行高度——所以它也必须做高度过渡，
+                   否则面板平滑展开、行高却被缩略图带着瞬间跳（I-016） -->
+              <div>
+                
+              </div>
+
+              <div class="flex items-start justify-between gap-[2rem]">
+                <!-- 这一列原本用 gap 拉开标题与面板；面板改成高度过渡后，折叠态仍会占一份 gap，
+                     所以间距挪进面板内部的 padding-top，随高度一起收（I-016） -->
+                <div class="flex flex-1 flex-col">
+                  <!-- 展开态标题带下划线（`1:104`）= 可跳详情页；折叠态无下划线（`1:94`）。
+                       两种表现都渲染进 DOM，JS 切换显隐；占位行没有详情页，恒为纯文本。示范模板只有
+                       一个新闻详情页（/news-detail.html），不按 slug 生成多篇，所有真实文章行都指向它 -->
+                  
+                  <span class="text-black" style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Business Plan for Project Under Preparation</span>
+                  
+
+                  <!-- 三层结构是必需的：.collapsible 是 grid，它的直接子元素靠 overflow:hidden
+                       把 min-content 压成 0（0fr 才收得干净），间距只能放在**再下一层**——
+                       padding 不受 overflow 影响，写在中间层会让折叠态永远残留一条 padding 高度 -->
+                  <div class="collapsible" data-accordion-panel>
+                    <div>
+                      <div class="[padding-top:var(--press-row-gap)]">
+                        
+                        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Details coming soon.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 按钮内只有指示器图形、没有文字，所以要 aria-label 提供可访问名称。
+                     但名称里**不能带 Collapse/Expand**：状态由 aria-expanded 表达且由 JS 实时更新，
+                     写进 label 只会在展开后变成陈旧且自相矛盾的描述（JS 不会去改 label）。
+                     注释必须放在标签外——HTML 的属性位置不允许出现注释，会被当成属性名吃掉后面的内容 -->
+                <button
+                  type="button"
+                  data-accordion-toggle
+                  aria-expanded="false"
+                  aria-label="Business Plan for Project Under Preparation"
+                  class="flex shrink-0 items-center [height:var(--leading-list-title)]"
+                >
+                  
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="border-b border-[var(--divider-color)] py-[var(--press-row-padding-y)] " data-accordion-item>
+            <div class="section-grid">
+              <!-- 左列：缩略图（设计稿 `1:109` 落在左栏 gutter 起点），无文章的占位行不渲染。
+                   缩略图比右栏文案高，是它决定整行高度——所以它也必须做高度过渡，
+                   否则面板平滑展开、行高却被缩略图带着瞬间跳（I-016） -->
+              <div>
+                
+              </div>
+
+              <div class="flex items-start justify-between gap-[2rem]">
+                <!-- 这一列原本用 gap 拉开标题与面板；面板改成高度过渡后，折叠态仍会占一份 gap，
+                     所以间距挪进面板内部的 padding-top，随高度一起收（I-016） -->
+                <div class="flex flex-1 flex-col">
+                  <!-- 展开态标题带下划线（`1:104`）= 可跳详情页；折叠态无下划线（`1:94`）。
+                       两种表现都渲染进 DOM，JS 切换显隐；占位行没有详情页，恒为纯文本。示范模板只有
+                       一个新闻详情页（/news-detail.html），不按 slug 生成多篇，所有真实文章行都指向它 -->
+                  
+                  <span class="text-black" style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Business Plan for Project Under Preparation</span>
+                  
+
+                  <!-- 三层结构是必需的：.collapsible 是 grid，它的直接子元素靠 overflow:hidden
+                       把 min-content 压成 0（0fr 才收得干净），间距只能放在**再下一层**——
+                       padding 不受 overflow 影响，写在中间层会让折叠态永远残留一条 padding 高度 -->
+                  <div class="collapsible" data-accordion-panel>
+                    <div>
+                      <div class="[padding-top:var(--press-row-gap)]">
+                        
+                        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Details coming soon.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 按钮内只有指示器图形、没有文字，所以要 aria-label 提供可访问名称。
+                     但名称里**不能带 Collapse/Expand**：状态由 aria-expanded 表达且由 JS 实时更新，
+                     写进 label 只会在展开后变成陈旧且自相矛盾的描述（JS 不会去改 label）。
+                     注释必须放在标签外——HTML 的属性位置不允许出现注释，会被当成属性名吃掉后面的内容 -->
+                <button
+                  type="button"
+                  data-accordion-toggle
+                  aria-expanded="false"
+                  aria-label="Business Plan for Project Under Preparation"
+                  class="flex shrink-0 items-center [height:var(--leading-list-title)]"
+                >
+                  
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+                </button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+    </main>
+    <footer
+  class="flex flex-col [gap:var(--footer-gap-y)] [padding-inline:var(--page-gutter)] [font-size:var(--text-caption)] leading-[var(--leading-caption)] text-black"
+>
+  <!-- 移动端 logo→内容列 60px（`1:918`→`1:932`），PC 端两者同行左右排布、没有这个纵向间距 -->
+  <div class="flex flex-col [gap:var(--footer-logo-gap-mobile)] md:flex-row md:items-start md:justify-between md:gap-0">
+    <!-- Footer logo 比 Header logo 大，且移动端(230px)比 PC(221px)还宽，与 Header 不是同一
+         尺寸系统，用独立 token（见 tokens.css [N-017]） -->
+    <a href="index.html" aria-label="Róng Museum of Art">
+      <img src="/rongmuseumofart-demo/assets/img/logo-black.svg" alt="Róng Museum of Art" class="h-auto [width:var(--footer-logo-width)]" />
+    </a>
+
+    <!-- 移动端各列纵向堆叠、列间 40px（`1:843` 的 row-gap）；PC 端横向排布，列间到 1920 精确
+         是 179px，768～1920 之间用 --footer-column-gap 插值收窄，避免 768 视口下溢出 -->
+    <div class="flex flex-col [gap:var(--footer-column-gap-mobile)] md:flex-row md:[gap:var(--footer-column-gap)]">
+      <!-- 设计稿 `1:131` 里 Explore/Email 两列的链接都是 whitespace-nowrap（不折行），
+           只有 Address 正文允许折行（列宽 453px，实际折成两行） -->
+      <div class="flex flex-col [gap:var(--footer-label-gap)] whitespace-nowrap">
+        <p class="font-semibold">Explore</p>
+        <!-- PC 端 About M80/Careers 各占一行（`1:132`-`1:136`）；移动端 About M80 | Careers
+             同行、竖线分隔（`1:846`-`1:849`，布局结构确实不同）。设计稿移动端该处文案是单数
+             "Career"，但以 PC 端"Careers"为准统一文案，这处单复数差异不是要还原的点 -->
+        <div class="flex items-center gap-[0.625rem] md:hidden">
+          <!-- 移动端「About M80」单独放大到 17px（`1:847`），是 footer 里唯一的字号例外，
+               同行的 Careers 仍是 14px，见 tokens.css [N-017] -->
+          <a href="about-m80.html" class="underline" style="font-size: var(--footer-about-m80-text-mobile)">About M80</a>
+          <span class="h-3 w-px bg-black" aria-hidden="true"></span>
+          <a href="careers.html" class="underline">Careers</a>
+        </div>
+        <a href="about-m80.html" class="hidden underline md:block">About M80</a>
+        <a href="careers.html" class="hidden underline md:block">Careers</a>
+      </div>
+
+      <div class="flex flex-col [gap:var(--footer-label-gap)] whitespace-nowrap">
+        <p class="font-semibold">Email</p>
+        <a href="mailto:inquiries@rongmuseumofart.com">inquiries@rongmuseumofart.com</a>
+      </div>
+
+      <div class="flex flex-col [gap:var(--footer-label-gap)]">
+        <p class="font-semibold">Address</p>
+        <!-- 用 width 不用 max-width：只给上限时，flex 的 shrink-to-fit 在这个宽度量级下
+             不会主动撑满（实测——768 视口下只撑到 108px 就不再增长，换行成 11 行挤成一团），
+             1920 端因为 clamp 顶到设计稿原值、无从对比才没暴露这个问题。改用 width 直接把
+             目标宽度定死，clamp() 本身的上限（453px）已经保证不会超出设计稿，不需要再叠一层
+             max-width。列宽上限只在 PC 横向布局（md: 起）有意义——移动端堆叠布局下这段文字
+             本来就该撑满所在列的实际宽度，所以放在 md: 后面 -->
+        <p class="md:[width:var(--footer-address-max-width)]">
+          Róng Museum Southeast Corner of the Intersection of Haide 1st Road and Zhongxin Road, Nanshan District,
+          Shenzhen, Guangdong, China
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PC 端 Privacy Policy 和 Copyright 同行两端对齐（`1:128`-`1:130`）；移动端堆叠两行
+       （`1:857`）——设计稿第二行末尾重复了一次 "Privacy Policy"，判定为设计稿本身的错误，
+       不复现，只取一次 -->
+  <div class="hidden md:flex md:items-center md:justify-between">
+    <span>Privacy Policy</span>
+    <span>© 2026 róng museum of art. all rights reserved</span>
+  </div>
+  <div class="flex flex-col md:hidden">
+    <p>Privacy Policy</p>
+    <p>© 2026 róng museum of art. all rights reserved</p>
+  </div>
+</footer>
+
+    
+<div data-modal="contact" hidden>
+  <div data-modal-backdrop class="fixed inset-0 z-40 bg-black/20 backdrop-blur-md"></div>
+  <div
+    class="fixed left-1/2 top-1/2 z-50 w-[calc(100%-3rem)] max-w-[74rem] -translate-x-1/2 -translate-y-1/2 bg-white p-[2.8125rem] md:p-[3.75rem]"
+  >
+    <button
+      type="button"
+      data-modal-close
+      aria-label="Close"
+      class="absolute right-[1.5rem] top-[1.5rem] h-[1.3125rem] w-[1.3125rem] md:right-[2.5rem] md:top-[2.5rem]"
+    >
+      <img src="/rongmuseumofart-demo/assets/img/close.svg" alt="" class="h-full w-full" />
+    </button>
+
+    <p class="text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">For inquiries, please contact us via email at</p>
+
+    <div
+      class="mt-[1.5rem] flex flex-col gap-[1rem] border-t border-[var(--divider-color)] pt-[1.5rem] md:mt-[2.5rem] md:flex-row md:items-center md:justify-between md:pt-[2.5rem]"
+    >
+      <a href="mailto:inquiries@rongmuseumofart.com" class="text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">inquiries@rongmuseumofart.com</a>
+      
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent "
+  data-mailto="inquiries@rongmuseumofart.com"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Send</span>
+</button>
+
+    </div>
+  </div>
+</div>
+
+    
+<div data-modal="menu" hidden class="fixed inset-0 z-50 flex flex-col bg-white [padding-inline:var(--page-gutter)] [padding-top:var(--header-padding-top)]">
+  <div class="flex items-start justify-between">
+    <img src="/rongmuseumofart-demo/assets/img/logo-black.svg" alt="Róng Museum of Art" class="h-auto w-[7.5625rem]" />
+    <button type="button" data-modal-close class="text-black" style="font-size: 0.875rem; line-height: 1.5">Close</button>
+  </div>
+
+  <nav class="mt-[3rem] flex flex-col text-black">
+    <a href="#about-us" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">About us</a>
+    <a href="#architecture" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Architecture</a>
+    <a href="#spatial-design" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Spatial Design</a>
+    <a href="#press" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Press</a>
+    <button
+      type="button"
+      data-modal-close
+      data-modal-open="contact"
+      class="border-b border-[#d4d4d4] py-[1.25rem] text-left"
+      style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem"
+    >
+      Contact
+    </button>
+    <!-- 语言切换按项目非目标（无 i18n）做成纯展示态，见 interaction-decisions.md I-004 -->
+    <div class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-family: var(--font-cjk); font-size: 1.375rem; line-height: 1.3125rem">
+      中文 / EN
+    </div>
+  </nav>
+
+  <p class="mt-auto pb-[1.5rem] text-black" style="font-size: 0.75rem; line-height: 1.125rem">© 2026 róng museum of art.</p>
+</div>
+
+  </body>
+</html>

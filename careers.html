@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="/rongmuseumofart-demo/favicon.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Careers — Róng Museum of Art</title>
+<meta name="description" content="Open positions at the Róng Museum of Art." />
+
+    <script type="module" crossorigin src="/rongmuseumofart-demo/assets/js/interactions-C4ouxeA9.js"></script>
+    <link rel="stylesheet" crossorigin href="/rongmuseumofart-demo/assets/css/interactions-tBi7a2_W.css">
+  </head>
+  <body>
+    
+<header
+  class="relative inset-x-0 top-0 z-10 flex items-start justify-between [padding-inline:var(--page-gutter)] [padding-top:var(--header-padding-top)] bg-white"
+>
+  <a href="index.html" aria-label="Róng Museum of Art">
+    <img src="/rongmuseumofart-demo/assets/img/logo-black.svg" alt="Róng Museum of Art" class="h-auto [width:var(--logo-width)]" />
+  </a>
+
+  <nav
+    class="hidden [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] text-black md:flex md:flex-col md:items-end md:gap-[1.5rem]"
+  >
+    <ul class="flex flex-col items-end gap-[0.375rem]">
+      <li><a href="index.html#about-us">About us</a></li>
+      <li><a href="index.html#architecture">Architecture</a></li>
+      <li><a href="index.html#spatial-design">Spatial Design</a></li>
+      <li><a href="index.html#press">Press</a></li>
+      <li><button type="button" data-modal-open="contact">Contact</button></li>
+    </ul>
+    <div class="flex items-center" style="font-family: var(--font-cjk)">
+      <span>中文</span>
+      <span style="font-family: var(--font-sans)"> / EN</span>
+    </div>
+  </nav>
+
+  <button
+    type="button"
+    data-modal-open="menu"
+    class="md:hidden [font-size:0.875rem] leading-[1.5] tracking-widest text-black"
+  >
+    MENU
+  </button>
+</header>
+
+    <!-- 纵向节奏（移动端实测，见 tokens.css [N-018]）：header 底→标题 50、正文→第二张图 40
+         （main 的 gap）、第二张图图注→Open positions 110（下面单独加 margin-top）、
+         正文→footer 110 -->
+    <main
+      class="flex flex-col [gap:var(--copy-gap)] [padding-inline:var(--page-gutter)] [padding-top:var(--header-content-gap)] [padding-bottom:var(--content-footer-gap)]"
+    >
+      <section class="section-grid" data-reveal>
+        <p class="text-black" style="font-size: var(--text-section-label); line-height: var(--leading-section-label)">Careers</p>
+        <div class="flex flex-col [gap:var(--copy-gap)]">
+          <!-- 移动端图片固定裁成 327×436（`1:970`），PC 端用图片自身比例 -->
+          
+<figure class="flex flex-col [gap:var(--image-caption-gap)] ">
+  <!-- aspect-mobile 是 base.css 里的工具类（只在 md 以下生效，读取 --aspect-mobile 变量）：
+       不能用 Tailwind 的 aspect-[...] 动态拼类名，Tailwind 是扫描源码里的字面量类名来生成
+       CSS 的，EJS 模板字符串插值出来的类名它扫不到、不会生成对应规则 -->
+  <img
+    src="/rongmuseumofart-demo/assets/img/careers/hero.webp"
+    alt="Róng Museum of Art staircase and gallery"
+    class="h-auto w-full object-cover aspect-mobile"
+    style="--aspect-mobile: 327/436"
+  />
+  <figcaption
+    class="text-black"
+    style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)"
+  >
+    © Gluckman Tang Architects 2026
+  </figcaption>
+</figure>
+
+          <div class="flex flex-col gap-[1rem] text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">
+            <p>
+              The Róng Museum of Art is committed to building a learning-oriented, collaborative, diverse, and inclusive team. We value
+              different backgrounds, perspectives, experiences, and voices. We embrace curiosity, encourage participation, and prioritize
+              expression. We hope all team members can learn from one another, grow together, and realize their potential in an open and
+              supportive work environment.
+            </p>
+            <p>
+              If you share our passion for contemporary art and cultural communication and believe that art has the power to connect and
+              inspire people, we welcome you to apply to join the Róng Museum of Art. By becoming an integral part of our endeavor, you can
+              help drive forward diverse dialogues and bring art into more people’s lives.
+            </p>
+            <p>
+              To apply: Please send your résumé to hr@rongmuseumofart.org. For any questions regarding the positions or the application
+              process, the recruitment team can also be reached via the same email address.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 第二张图移动端裁成 327×245（`1:976`，和主图 436 高不同），PC 端用图片自身比例 -->
+      
+<figure class="flex flex-col [gap:var(--image-caption-gap)] ">
+  <!-- aspect-mobile 是 base.css 里的工具类（只在 md 以下生效，读取 --aspect-mobile 变量）：
+       不能用 Tailwind 的 aspect-[...] 动态拼类名，Tailwind 是扫描源码里的字面量类名来生成
+       CSS 的，EJS 模板字符串插值出来的类名它扫不到、不会生成对应规则 -->
+  <img
+    src="/rongmuseumofart-demo/assets/img/careers/detail.webp"
+    alt="Róng Museum of Art library"
+    class="h-auto w-full object-cover aspect-mobile"
+    style="--aspect-mobile: 327/245"
+  />
+  <figcaption
+    class="text-black"
+    style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)"
+  >
+    © Gluckman Tang Architects 2026
+  </figcaption>
+</figure>
+
+
+      <!-- 图注→Open positions 移动端实测 110px（`1:979` 设计稿里就叫 "Spacing · 110"），
+           比 main 的 gap(40) 大，单独加 margin-top 补足差值之外的部分 -->
+      <section class="flex flex-col [gap:var(--section-label-gap-mobile)] [margin-top:calc(var(--section-gap-y)-var(--copy-gap))] md:gap-[2rem]" data-reveal>
+        <!-- "Open positions" 是二级小标题，移动端 14px（`1:980` h=21=14×1.5），和页面主标题
+             （17px）不是一个层级，用 --text-body-sm 而非 --text-section-label -->
+        <p class="text-black" style="font-size: var(--text-body-sm); line-height: var(--leading-body-sm)">Open positions</p>
+        <div data-accordion>
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] is-open"
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="true" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Director of Development &amp; Operations</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        
+        <div class="flex flex-col gap-[1rem]">
+          <p class="text-black" style="font-size: var(--text-subheading); line-height: var(--leading-body-sm)">Responsibilities:</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">1. Operations System Construction: Establish and optimize the museum’s operations systems and processes, regularly evaluate and optimize operations systems, ensure operational compliance with relevant laws and regulations.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">2. Interdepartmental Coordination and Integration: Coordinate with departments such as legal and finance to optimize resource allocation, work closely with the marketing team in integrating external resources and expanding audience outreach as well as partnerships.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">3. Budget and Procurement Management: Prepare and monitor operating budgets, formulate procurement strategies and plans, ensure the timely arrival of operational materials.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">4. Data and Metrics Management: Integrate and analyze operating data and metrics to support decision-making processes, manage the Museum’s archives and project schedules.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">5. Operations Support: Manage and develop the operations team, organize training, supervise the execution of management policies, coordinate daily operations, respond to emergencies as they arise, improve audience experience.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">6. Fundraising and Development: Cultivate relationships with corporate and individual donors, as well as other prospective partners, develop sponsorship proposals aligned with national cultural and tourism policies, secure philanthropic donations and corporate sponsorships.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">7. Retail Operations Management: Design and implement admissions and membership growth strategies, oversee the operations of the Museum shop, cafe, and other commercial facilities, ensure that all services align with the Museum’s mission and brand identity.</p>
+          
+        </div>
+        
+        
+        <div class="flex flex-col gap-[1rem]">
+          <p class="text-black" style="font-size: var(--text-subheading); line-height: var(--leading-body-sm)">Requirements:</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">1. Educational Background: Bachelor’s degree or above. Majors in Arts Management, Cultural Industry Management, Marketing, and other relevant fields are preferred, as well as familiarity with Chinese policies relating to the fields of art, culture, and tourism.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">2. Previous Experience: At least 7 years of experience in development, fundraising, or cultural project management. Skills in building and maintaining key stakeholder relationships and corporate relationships. Work experience in art or cultural institutions is preferred.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">3. Core Competencies: Strong commercial acumen and the ability to independently develop partnership proposals and lead negotiations. Outstanding project management and multitasking skills with an attention to detail. Fluency in written and spoken Chinese and English, with excellent report-writing skills.</p>
+          
+          <p class="text-black" style="font-size: var(--text-caption); line-height: var(--leading-caption)">4. Professional Qualities: A strong commitment to the public value of arts and culture, with a high standard of professional integrity and sense of discretion. Ability to thrive in a fast-paced work environment, work effectively under pressure, and foster efficient interdepartmental collaboration.</p>
+          
+        </div>
+        
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] "
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="false" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Development Officer (Sponsorship)</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Job description coming soon.</p>
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] "
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="false" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Museum Shop Associate</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Job description coming soon.</p>
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] "
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="false" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Exhibition Technician</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Job description coming soon.</p>
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] "
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="false" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Collection Manager</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Job description coming soon.</p>
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] "
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="false" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Curator (Learning &amp; Engagement)</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Job description coming soon.</p>
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] "
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="false" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Librarian</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Job description coming soon.</p>
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] "
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="false" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Director of Marketing &amp; Communications</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Job description coming soon.</p>
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          <!-- 第一条默认展开（`1:982` "Position · Expanded"，其余 "Position · Collapsed"，见 I-008） -->
+          
+<div
+  class="grid grid-cols-1 border-t border-[var(--divider-color)] [gap:var(--position-row-gap-mobile)] [padding-block:var(--position-row-padding-y)] md:grid-cols-[202fr_1672fr] md:gap-[4rem] "
+  data-accordion-item
+>
+  <!-- PC 左栏：标签/日期分两行；移动端这一份隐藏，改用下面的单行版本（order 让它排到标题之后） -->
+  <div class="hidden flex-col gap-[0.25rem] text-black md:flex" style="font-size: var(--text-caption); line-height: var(--leading-caption)">
+    <span>Application Deadline</span>
+    <span>31 Oct. 2026</span>
+  </div>
+
+  <div class="flex flex-col">
+    <!-- 标题与 Deadline 之间保留 gap；展开面板不能待在这个带 gap 的容器里，
+         否则折叠态（高度 0）仍会占一份 gap，见 expandable-text-block 里的同一处说明（I-016） -->
+    <div class="flex flex-col [gap:var(--position-row-gap-mobile)] md:gap-[2rem]">
+      <button type="button" data-accordion-toggle aria-expanded="false" class="flex w-full items-start justify-between gap-[1rem] text-left text-black">
+        <span style="font-size: var(--text-list-title); letter-spacing: var(--tracking-list-title); line-height: var(--leading-list-title)">Marketing &amp; Communications Officer</span>
+        <!-- 与 Press 共用的液态指示器：折叠单球 ↔ 展开两球粘合。移动端设计稿是 12×12
+             （`1:985`），PC 是 20×20（`1:483`），缩放交给 liquid-indicator 自己的响应式宽度 -->
+        <span class="flex shrink-0 items-center [height:var(--leading-list-title)]">
+          
+<svg
+  aria-hidden="true"
+  focusable="false"
+  viewBox="0 0 20 39"
+  class="w-[1.25rem] shrink-0"
+  style="height: 2.4375rem"
+>
+  <path
+    data-indicator
+    data-collapsed-d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    data-expanded-d="M10 39 C4.477 39 0 34.522999999999996 0 29 C0 27.028 0.5454 25.102 1.63625 23.4907 C3.27251 21.041900000000002 3.27251 17.958099999999998 1.63625 15.5093 C0.5454 13.898 0 11.972 0 10 C0 4.477 4.477 0 10 0 C15.523 0 20 4.477 20 10 C20 11.972 19.4546 13.898 18.36375 15.5093 C16.72749 17.958099999999998 16.72749 21.041900000000002 18.36375 23.4907 C19.4546 25.102 20 27.028 20 29 C20 34.522999999999996 15.523 39 10 39 Z"
+    d="M10 29.5 C4.477 29.5 0 25.023 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 19.5 0 19.5 0 19.5 C0 13.977 4.477 9.5 10 9.5 C15.523 9.5 20 13.977 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 19.5 20 19.5 20 19.5 C20 25.023 15.523 29.5 10 29.5 Z"
+    fill="black"
+    style="transition: d var(--motion-duration) var(--motion-ease)"
+  />
+</svg>
+
+        </span>
+      </button>
+
+      <!-- 移动端专属：Deadline 单行、12px，排在标题下方（`1:986`） -->
+      <p class="text-black md:hidden" style="font-size: var(--text-position-deadline-mobile); line-height: 1.5">
+        Application Deadline&nbsp;&nbsp;&nbsp;31 Oct. 2026
+      </p>
+    </div>
+
+    <div class="collapsible" data-accordion-panel>
+      <!-- 中间这层只负责 overflow:hidden，间距放在下一层：padding 不受 overflow 影响，
+           写在这里会让折叠态残留一条 padding 高度 -->
+      <div>
+        <div class="flex flex-col gap-[2rem] [padding-top:var(--position-row-gap-mobile)] md:[padding-top:2rem]">
+      
+        <p class="text-black/50" style="font-size: var(--text-caption); line-height: var(--leading-caption)">Job description coming soon.</p>
+      
+          
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent self-start"
+  data-accordion-toggle
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Close</span>
+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+        </div>
+      </section>
+    </main>
+    <footer
+  class="flex flex-col [gap:var(--footer-gap-y)] [padding-inline:var(--page-gutter)] [font-size:var(--text-caption)] leading-[var(--leading-caption)] text-black"
+>
+  <!-- 移动端 logo→内容列 60px（`1:918`→`1:932`），PC 端两者同行左右排布、没有这个纵向间距 -->
+  <div class="flex flex-col [gap:var(--footer-logo-gap-mobile)] md:flex-row md:items-start md:justify-between md:gap-0">
+    <!-- Footer logo 比 Header logo 大，且移动端(230px)比 PC(221px)还宽，与 Header 不是同一
+         尺寸系统，用独立 token（见 tokens.css [N-017]） -->
+    <a href="index.html" aria-label="Róng Museum of Art">
+      <img src="/rongmuseumofart-demo/assets/img/logo-black.svg" alt="Róng Museum of Art" class="h-auto [width:var(--footer-logo-width)]" />
+    </a>
+
+    <!-- 移动端各列纵向堆叠、列间 40px（`1:843` 的 row-gap）；PC 端横向排布，列间到 1920 精确
+         是 179px，768～1920 之间用 --footer-column-gap 插值收窄，避免 768 视口下溢出 -->
+    <div class="flex flex-col [gap:var(--footer-column-gap-mobile)] md:flex-row md:[gap:var(--footer-column-gap)]">
+      <!-- 设计稿 `1:131` 里 Explore/Email 两列的链接都是 whitespace-nowrap（不折行），
+           只有 Address 正文允许折行（列宽 453px，实际折成两行） -->
+      <div class="flex flex-col [gap:var(--footer-label-gap)] whitespace-nowrap">
+        <p class="font-semibold">Explore</p>
+        <!-- PC 端 About M80/Careers 各占一行（`1:132`-`1:136`）；移动端 About M80 | Careers
+             同行、竖线分隔（`1:846`-`1:849`，布局结构确实不同）。设计稿移动端该处文案是单数
+             "Career"，但以 PC 端"Careers"为准统一文案，这处单复数差异不是要还原的点 -->
+        <div class="flex items-center gap-[0.625rem] md:hidden">
+          <!-- 移动端「About M80」单独放大到 17px（`1:847`），是 footer 里唯一的字号例外，
+               同行的 Careers 仍是 14px，见 tokens.css [N-017] -->
+          <a href="about-m80.html" class="underline" style="font-size: var(--footer-about-m80-text-mobile)">About M80</a>
+          <span class="h-3 w-px bg-black" aria-hidden="true"></span>
+          <a href="careers.html" class="underline">Careers</a>
+        </div>
+        <a href="about-m80.html" class="hidden underline md:block">About M80</a>
+        <a href="careers.html" class="hidden underline md:block">Careers</a>
+      </div>
+
+      <div class="flex flex-col [gap:var(--footer-label-gap)] whitespace-nowrap">
+        <p class="font-semibold">Email</p>
+        <a href="mailto:inquiries@rongmuseumofart.com">inquiries@rongmuseumofart.com</a>
+      </div>
+
+      <div class="flex flex-col [gap:var(--footer-label-gap)]">
+        <p class="font-semibold">Address</p>
+        <!-- 用 width 不用 max-width：只给上限时，flex 的 shrink-to-fit 在这个宽度量级下
+             不会主动撑满（实测——768 视口下只撑到 108px 就不再增长，换行成 11 行挤成一团），
+             1920 端因为 clamp 顶到设计稿原值、无从对比才没暴露这个问题。改用 width 直接把
+             目标宽度定死，clamp() 本身的上限（453px）已经保证不会超出设计稿，不需要再叠一层
+             max-width。列宽上限只在 PC 横向布局（md: 起）有意义——移动端堆叠布局下这段文字
+             本来就该撑满所在列的实际宽度，所以放在 md: 后面 -->
+        <p class="md:[width:var(--footer-address-max-width)]">
+          Róng Museum Southeast Corner of the Intersection of Haide 1st Road and Zhongxin Road, Nanshan District,
+          Shenzhen, Guangdong, China
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PC 端 Privacy Policy 和 Copyright 同行两端对齐（`1:128`-`1:130`）；移动端堆叠两行
+       （`1:857`）——设计稿第二行末尾重复了一次 "Privacy Policy"，判定为设计稿本身的错误，
+       不复现，只取一次 -->
+  <div class="hidden md:flex md:items-center md:justify-between">
+    <span>Privacy Policy</span>
+    <span>© 2026 róng museum of art. all rights reserved</span>
+  </div>
+  <div class="flex flex-col md:hidden">
+    <p>Privacy Policy</p>
+    <p>© 2026 róng museum of art. all rights reserved</p>
+  </div>
+</footer>
+
+    
+<div data-modal="contact" hidden>
+  <div data-modal-backdrop class="fixed inset-0 z-40 bg-black/20 backdrop-blur-md"></div>
+  <div
+    class="fixed left-1/2 top-1/2 z-50 w-[calc(100%-3rem)] max-w-[74rem] -translate-x-1/2 -translate-y-1/2 bg-white p-[2.8125rem] md:p-[3.75rem]"
+  >
+    <button
+      type="button"
+      data-modal-close
+      aria-label="Close"
+      class="absolute right-[1.5rem] top-[1.5rem] h-[1.3125rem] w-[1.3125rem] md:right-[2.5rem] md:top-[2.5rem]"
+    >
+      <img src="/rongmuseumofart-demo/assets/img/close.svg" alt="" class="h-full w-full" />
+    </button>
+
+    <p class="text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">For inquiries, please contact us via email at</p>
+
+    <div
+      class="mt-[1.5rem] flex flex-col gap-[1rem] border-t border-[var(--divider-color)] pt-[1.5rem] md:mt-[2.5rem] md:flex-row md:items-center md:justify-between md:pt-[2.5rem]"
+    >
+      <a href="mailto:inquiries@rongmuseumofart.com" class="text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">inquiries@rongmuseumofart.com</a>
+      
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent "
+  data-mailto="inquiries@rongmuseumofart.com"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Send</span>
+</button>
+
+    </div>
+  </div>
+</div>
+
+    
+<div data-modal="menu" hidden class="fixed inset-0 z-50 flex flex-col bg-white [padding-inline:var(--page-gutter)] [padding-top:var(--header-padding-top)]">
+  <div class="flex items-start justify-between">
+    <img src="/rongmuseumofart-demo/assets/img/logo-black.svg" alt="Róng Museum of Art" class="h-auto w-[7.5625rem]" />
+    <button type="button" data-modal-close class="text-black" style="font-size: 0.875rem; line-height: 1.5">Close</button>
+  </div>
+
+  <nav class="mt-[3rem] flex flex-col text-black">
+    <a href="index.html#about-us" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">About us</a>
+    <a href="index.html#architecture" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Architecture</a>
+    <a href="index.html#spatial-design" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Spatial Design</a>
+    <a href="index.html#press" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Press</a>
+    <button
+      type="button"
+      data-modal-close
+      data-modal-open="contact"
+      class="border-b border-[#d4d4d4] py-[1.25rem] text-left"
+      style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem"
+    >
+      Contact
+    </button>
+    <!-- 语言切换按项目非目标（无 i18n）做成纯展示态，见 interaction-decisions.md I-004 -->
+    <div class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-family: var(--font-cjk); font-size: 1.375rem; line-height: 1.3125rem">
+      中文 / EN
+    </div>
+  </nav>
+
+  <p class="mt-auto pb-[1.5rem] text-black" style="font-size: 0.75rem; line-height: 1.125rem">© 2026 róng museum of art.</p>
+</div>
+
+  </body>
+</html>

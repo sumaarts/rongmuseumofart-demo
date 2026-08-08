@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="/rongmuseumofart-demo/favicon.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About M80 — Róng Museum of Art</title>
+<meta name="description" content="M80 is a mixed-use urban complex in Shenzhen&#39;s Houhai neighborhood." />
+
+    <script type="module" crossorigin src="/rongmuseumofart-demo/assets/js/interactions-C4ouxeA9.js"></script>
+    <link rel="stylesheet" crossorigin href="/rongmuseumofart-demo/assets/css/interactions-tBi7a2_W.css">
+  </head>
+  <body>
+    
+<header
+  class="relative inset-x-0 top-0 z-10 flex items-start justify-between [padding-inline:var(--page-gutter)] [padding-top:var(--header-padding-top)] bg-white"
+>
+  <a href="index.html" aria-label="Róng Museum of Art">
+    <img src="/rongmuseumofart-demo/assets/img/logo-black.svg" alt="Róng Museum of Art" class="h-auto [width:var(--logo-width)]" />
+  </a>
+
+  <nav
+    class="hidden [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] text-black md:flex md:flex-col md:items-end md:gap-[1.5rem]"
+  >
+    <ul class="flex flex-col items-end gap-[0.375rem]">
+      <li><a href="index.html#about-us">About us</a></li>
+      <li><a href="index.html#architecture">Architecture</a></li>
+      <li><a href="index.html#spatial-design">Spatial Design</a></li>
+      <li><a href="index.html#press">Press</a></li>
+      <li><button type="button" data-modal-open="contact">Contact</button></li>
+    </ul>
+    <div class="flex items-center" style="font-family: var(--font-cjk)">
+      <span>中文</span>
+      <span style="font-family: var(--font-sans)"> / EN</span>
+    </div>
+  </nav>
+
+  <button
+    type="button"
+    data-modal-open="menu"
+    class="md:hidden [font-size:0.875rem] leading-[1.5] tracking-widest text-black"
+  >
+    MENU
+  </button>
+</header>
+
+    <!-- header 底→页面标题走 --header-content-gap（PC 30 / Mobile 50）；正文→footer 走
+         --content-footer-gap（PC 200 / Mobile 110，移动端设计稿即 "Footer Top Spacing"），
+         二者此前都误用了别的 token，见 tokens.css [N-018] -->
+    <main class="[padding-inline:var(--page-gutter)] [padding-top:var(--header-content-gap)] [padding-bottom:var(--content-footer-gap)]">
+      <section class="section-grid" data-reveal>
+        <p class="text-black" style="font-size: var(--text-section-label); line-height: var(--leading-section-label)">About M80</p>
+        <div class="flex flex-col [gap:var(--copy-gap)]">
+          <!-- 移动端图片固定裁成 327×436（`1:911`），PC 端用图片自身比例 -->
+          
+<figure class="flex flex-col [gap:var(--image-caption-gap)] ">
+  <!-- aspect-mobile 是 base.css 里的工具类（只在 md 以下生效，读取 --aspect-mobile 变量）：
+       不能用 Tailwind 的 aspect-[...] 动态拼类名，Tailwind 是扫描源码里的字面量类名来生成
+       CSS 的，EJS 模板字符串插值出来的类名它扫不到、不会生成对应规则 -->
+  <img
+    src="/rongmuseumofart-demo/assets/img/about-m80/hero.webp"
+    alt="M80 by Ole Scheeren"
+    class="h-auto w-full object-cover aspect-mobile"
+    style="--aspect-mobile: 327/436"
+  />
+  <figcaption
+    class="text-black"
+    style="font-size: var(--text-image-credit); letter-spacing: var(--tracking-image-credit); line-height: var(--leading-image-credit)"
+  >
+    Róng Museum of Art by Ole Scheeren © Buro–OS
+  </figcaption>
+</figure>
+
+          <p class="text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">
+            Located in Shenzhen’s Houhai neighborhood, M80 is a mixed-use urban complex that brings together work, life, culture,
+            commerce, leisure, and nature. Envisioned as “an ideal place for countless conversations,” and shaped by architect Ole
+            Scheeren’s fluid architectural language, it fosters interpersonal encounters and forges a connection to both the surrounding
+            community and the city at large. The Róng Museum of Art sits in the heart of M80 and forms an integral part of its cultural
+            ecosystem.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer
+  class="flex flex-col [gap:var(--footer-gap-y)] [padding-inline:var(--page-gutter)] [font-size:var(--text-caption)] leading-[var(--leading-caption)] text-black"
+>
+  <!-- 移动端 logo→内容列 60px（`1:918`→`1:932`），PC 端两者同行左右排布、没有这个纵向间距 -->
+  <div class="flex flex-col [gap:var(--footer-logo-gap-mobile)] md:flex-row md:items-start md:justify-between md:gap-0">
+    <!-- Footer logo 比 Header logo 大，且移动端(230px)比 PC(221px)还宽，与 Header 不是同一
+         尺寸系统，用独立 token（见 tokens.css [N-017]） -->
+    <a href="index.html" aria-label="Róng Museum of Art">
+      <img src="/rongmuseumofart-demo/assets/img/logo-black.svg" alt="Róng Museum of Art" class="h-auto [width:var(--footer-logo-width)]" />
+    </a>
+
+    <!-- 移动端各列纵向堆叠、列间 40px（`1:843` 的 row-gap）；PC 端横向排布，列间到 1920 精确
+         是 179px，768～1920 之间用 --footer-column-gap 插值收窄，避免 768 视口下溢出 -->
+    <div class="flex flex-col [gap:var(--footer-column-gap-mobile)] md:flex-row md:[gap:var(--footer-column-gap)]">
+      <!-- 设计稿 `1:131` 里 Explore/Email 两列的链接都是 whitespace-nowrap（不折行），
+           只有 Address 正文允许折行（列宽 453px，实际折成两行） -->
+      <div class="flex flex-col [gap:var(--footer-label-gap)] whitespace-nowrap">
+        <p class="font-semibold">Explore</p>
+        <!-- PC 端 About M80/Careers 各占一行（`1:132`-`1:136`）；移动端 About M80 | Careers
+             同行、竖线分隔（`1:846`-`1:849`，布局结构确实不同）。设计稿移动端该处文案是单数
+             "Career"，但以 PC 端"Careers"为准统一文案，这处单复数差异不是要还原的点 -->
+        <div class="flex items-center gap-[0.625rem] md:hidden">
+          <!-- 移动端「About M80」单独放大到 17px（`1:847`），是 footer 里唯一的字号例外，
+               同行的 Careers 仍是 14px，见 tokens.css [N-017] -->
+          <a href="about-m80.html" class="underline" style="font-size: var(--footer-about-m80-text-mobile)">About M80</a>
+          <span class="h-3 w-px bg-black" aria-hidden="true"></span>
+          <a href="careers.html" class="underline">Careers</a>
+        </div>
+        <a href="about-m80.html" class="hidden underline md:block">About M80</a>
+        <a href="careers.html" class="hidden underline md:block">Careers</a>
+      </div>
+
+      <div class="flex flex-col [gap:var(--footer-label-gap)] whitespace-nowrap">
+        <p class="font-semibold">Email</p>
+        <a href="mailto:inquiries@rongmuseumofart.com">inquiries@rongmuseumofart.com</a>
+      </div>
+
+      <div class="flex flex-col [gap:var(--footer-label-gap)]">
+        <p class="font-semibold">Address</p>
+        <!-- 用 width 不用 max-width：只给上限时，flex 的 shrink-to-fit 在这个宽度量级下
+             不会主动撑满（实测——768 视口下只撑到 108px 就不再增长，换行成 11 行挤成一团），
+             1920 端因为 clamp 顶到设计稿原值、无从对比才没暴露这个问题。改用 width 直接把
+             目标宽度定死，clamp() 本身的上限（453px）已经保证不会超出设计稿，不需要再叠一层
+             max-width。列宽上限只在 PC 横向布局（md: 起）有意义——移动端堆叠布局下这段文字
+             本来就该撑满所在列的实际宽度，所以放在 md: 后面 -->
+        <p class="md:[width:var(--footer-address-max-width)]">
+          Róng Museum Southeast Corner of the Intersection of Haide 1st Road and Zhongxin Road, Nanshan District,
+          Shenzhen, Guangdong, China
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PC 端 Privacy Policy 和 Copyright 同行两端对齐（`1:128`-`1:130`）；移动端堆叠两行
+       （`1:857`）——设计稿第二行末尾重复了一次 "Privacy Policy"，判定为设计稿本身的错误，
+       不复现，只取一次 -->
+  <div class="hidden md:flex md:items-center md:justify-between">
+    <span>Privacy Policy</span>
+    <span>© 2026 róng museum of art. all rights reserved</span>
+  </div>
+  <div class="flex flex-col md:hidden">
+    <p>Privacy Policy</p>
+    <p>© 2026 róng museum of art. all rights reserved</p>
+  </div>
+</footer>
+
+    
+<div data-modal="contact" hidden>
+  <div data-modal-backdrop class="fixed inset-0 z-40 bg-black/20 backdrop-blur-md"></div>
+  <div
+    class="fixed left-1/2 top-1/2 z-50 w-[calc(100%-3rem)] max-w-[74rem] -translate-x-1/2 -translate-y-1/2 bg-white p-[2.8125rem] md:p-[3.75rem]"
+  >
+    <button
+      type="button"
+      data-modal-close
+      aria-label="Close"
+      class="absolute right-[1.5rem] top-[1.5rem] h-[1.3125rem] w-[1.3125rem] md:right-[2.5rem] md:top-[2.5rem]"
+    >
+      <img src="/rongmuseumofart-demo/assets/img/close.svg" alt="" class="h-full w-full" />
+    </button>
+
+    <p class="text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">For inquiries, please contact us via email at</p>
+
+    <div
+      class="mt-[1.5rem] flex flex-col gap-[1rem] border-t border-[var(--divider-color)] pt-[1.5rem] md:mt-[2.5rem] md:flex-row md:items-center md:justify-between md:pt-[2.5rem]"
+    >
+      <a href="mailto:inquiries@rongmuseumofart.com" class="text-black" style="font-size: var(--text-body-lg); letter-spacing: var(--tracking-body-lg); line-height: var(--leading-body-lg)">inquiries@rongmuseumofart.com</a>
+      
+<button
+  type="button"
+  data-liquid-button
+  class="group relative inline-flex items-center justify-center whitespace-nowrap rounded-[var(--button-radius)] border-[length:var(--button-border-width)] border-black [padding-inline:var(--button-padding-x)] [padding-block:var(--button-padding-y)] text-black [font-size:var(--text-body-sm)] leading-[var(--leading-body-sm)] hover:border-transparent focus-visible:border-transparent "
+  data-mailto="inquiries@rongmuseumofart.com"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    class="pointer-events-none absolute inset-0 h-full w-full overflow-visible opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      class="[d:var(--button-path)] [transition:d_var(--motion-duration)_var(--motion-ease)] group-hover:[d:var(--button-path-hover)] group-focus-visible:[d:var(--button-path-hover)]"
+    />
+  </svg>
+  <span class="relative" data-button-label>Send</span>
+</button>
+
+    </div>
+  </div>
+</div>
+
+    
+<div data-modal="menu" hidden class="fixed inset-0 z-50 flex flex-col bg-white [padding-inline:var(--page-gutter)] [padding-top:var(--header-padding-top)]">
+  <div class="flex items-start justify-between">
+    <img src="/rongmuseumofart-demo/assets/img/logo-black.svg" alt="Róng Museum of Art" class="h-auto w-[7.5625rem]" />
+    <button type="button" data-modal-close class="text-black" style="font-size: 0.875rem; line-height: 1.5">Close</button>
+  </div>
+
+  <nav class="mt-[3rem] flex flex-col text-black">
+    <a href="index.html#about-us" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">About us</a>
+    <a href="index.html#architecture" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Architecture</a>
+    <a href="index.html#spatial-design" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Spatial Design</a>
+    <a href="index.html#press" data-modal-close class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem">Press</a>
+    <button
+      type="button"
+      data-modal-close
+      data-modal-open="contact"
+      class="border-b border-[#d4d4d4] py-[1.25rem] text-left"
+      style="font-size: 1.375rem; letter-spacing: -0.0240625rem; line-height: 1.6875rem"
+    >
+      Contact
+    </button>
+    <!-- 语言切换按项目非目标（无 i18n）做成纯展示态，见 interaction-decisions.md I-004 -->
+    <div class="border-b border-[#d4d4d4] py-[1.25rem]" style="font-family: var(--font-cjk); font-size: 1.375rem; line-height: 1.3125rem">
+      中文 / EN
+    </div>
+  </nav>
+
+  <p class="mt-auto pb-[1.5rem] text-black" style="font-size: 0.75rem; line-height: 1.125rem">© 2026 róng museum of art.</p>
+</div>
+
+  </body>
+</html>
